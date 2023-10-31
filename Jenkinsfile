@@ -9,13 +9,13 @@ pipeline {
         }
     }
 
-    stage(Install){
+    stage('Install'){
         steps {
             sh "npm install"
         }
     }
 
-    stage(Test){
+    stage('Test'){
         steps {
             sh "npm test"
         }
